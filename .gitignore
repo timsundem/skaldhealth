@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite Database
+backend/skaldhealth.db
+
+# Environment Variables
+*.env
+
+# Virtual Environment
+venv/
+
+# Node.js (if frontend uses it)
+node_modules/
+dist/
+build/
+
+# General
+.DS_Store
+*.log
