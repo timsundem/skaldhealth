@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkaldHealth Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to SkaldHealth</h1>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" style="display: none;" />
+      
+      <select id="role" style="display: none;">
+        <option value="user" selected>User</option>
+        <option value="admin">Admin</option>
+        <option value="clinician">Clinician</option>
+        <option value="nurse">Nurse</option>
+      </select>
+    
+      <button type="submit" id="loginButton">Login</button>
+      <button type="button" id="createAccountButton" style="display: none;">Create Account</button>
+      <p id="toggleForm">New here? <span>Create an account.</span></p>
+      <p id="errorMessage" class="error-message"></p>
+    </form>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
